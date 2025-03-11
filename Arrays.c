@@ -9,7 +9,7 @@ int main() {
     int size = sizeof(arr1) / sizeof(arr1[0]);
     printf("First element: %d\n", arr1[0]);
     for (int i = 0; i < size; ++i) {
-        printf("%d\t", arr1[i]);
+        printf("%d\t", *(arr1+i));
     }
     return 0;
 }
